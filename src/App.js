@@ -1,16 +1,16 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Swap from "./pages/Swap";
 
 const App = () => {
   return (
-    <div>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/swap" element={<Swap />} />
       </Routes>
-    </div>
+    </HashRouter>
   );
 };
 
